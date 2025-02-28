@@ -5,3 +5,7 @@ Cypress.Commands.add("fillField", (element, content) => {
 Cypress.Commands.add("clickElement", (element) => {
   cy.get(element).click({ force: true });
 });
+
+Cypress.Commands.add("validateText", (element, text) => {
+  cy.get(element).contains(text);
+});
