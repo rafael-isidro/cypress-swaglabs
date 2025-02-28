@@ -17,8 +17,8 @@ Este projeto contém testes automatizados para o site [Swag Labs](https://www.sa
  ┃  ┗ 📜 [data-tests].json
  ┣ 📂 support/
  ┃  ┣ 📂 pages/
- ┃  ┣  ┣ 📜 base.page.js
- ┃  ┣  ┗ 📜 [tests].page.js
+ ┃  ┃  ┣ 📜 base.page.js
+ ┃  ┃  ┗ 📜 [tests].page.js
  ┃  ┣ 📜 commands.js
  ┃  ┗ 📜 e2e.js
  ┣ 📜 cypress.config.js
