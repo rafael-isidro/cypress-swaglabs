@@ -30,7 +30,25 @@ Este projeto contém testes automatizados para o site [Swag Labs](https://www.sa
 ```sh
 git clone https://github.com/rafael-isidro/cypress-swaglabs.git
 ```
-### 2. Instalar dependências
+### 2. Adicionar arquivo loginData.json como no modelo abaixo em cypress/fixtures, substituindo username e password pelos dados utilizados para teste:
+#### loginData.json:
+```sh
+{
+    "validCredentials": {
+      "username": "USERNAME_VALIDO",
+      "password": "SENHA_VALIDA"
+    },
+    "invalidCredentials": {
+      "username": "USERNAME_INVALIDO",
+      "password": "SENHA_INVALIDA"
+    },
+    "blockedAccount": {
+      "username": "USERNAME_BLOQUEADO",
+      "password": "SENHA_VALIDA"
+    }
+}
+```
+### 3. Instalar dependências
 ```sh
 cd swaglabs-cypress
 npm install
