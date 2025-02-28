@@ -9,3 +9,7 @@ Cypress.Commands.add("clickElement", (element) => {
 Cypress.Commands.add("validateText", (element, text) => {
   cy.get(element).contains(text);
 });
+
+Cypress.Commands.add("getText", (element) => {
+  cy.get(element).invoke("text");
+});
