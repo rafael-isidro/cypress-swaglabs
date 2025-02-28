@@ -54,7 +54,7 @@ cd swaglabs-cypress
 npm install
 ```
 
-### 3. Executar os testes
+### 4. Executar os testes
 #### Modo interativo (UI do Cypress):
 ```sh
 npx cypress open
