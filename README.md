@@ -1,7 +1,7 @@
 # Testes Automatizados - Swag Labs com Cypress
 
 ## 📌 Sobre o Projeto
-Este projeto contém testes automatizados para o site [Swag Labs](https://www.saucedemo.com/) ```https://www.saucedemo.com/``` utilizando **Cypress**. Os testes incluem cenários de login, adição de produtos ao carrinho, finalização de compra e logout.
+Este projeto contém testes automatizados para o site [Swag Labs](https://www.saucedemo.com/) ```https://www.saucedemo.com/``` utilizando **Cypress**. Os testes incluem cenários de login, adição de produtos ao carrinho e checkout de carrinho.
 
 ## 🚀 Tecnologias Utilizadas
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) - Linguagem de programação
