@@ -1,7 +1,7 @@
 # Testes Automatizados - Swag Labs com Cypress
 
 ## 📌 Sobre o Projeto
-Este projeto contém testes automatizados para o site [Swag Labs](https://www.saucedemo.com/) ```https://www.saucedemo.com/``` utilizando **Cypress**. Os testes incluem cenários de login, adição de produtos ao carrinho e checkout de carrinho.
+Este projeto contém testes automatizados para o site [Swag Labs](https://www.saucedemo.com/) ```https://www.saucedemo.com/``` utilizando **Cypress**. Os testes incluem cenários de login, adição e remoção de produtos ao carrinho e checkout de carrinho.
 
 ## 🚀 Tecnologias Utilizadas
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) - Linguagem de programação
@@ -92,11 +92,11 @@ O relatório dos testes será gerado em ```cypress/reports/html```
 - ✅ TC005 - Tentar realizar login com senha vazia
 - ✅ TC006 - Tentar realizar login com conta bloqueada
 
-### Produto:
+### Carrinho:
 - ✅ TC001 - Validar adição de produto ao carrinho
 - ✅ TC002 - Validar remoção de produto do carrinho
 
-### Carrinho de Compras:
+### Checkout:
 - ✅ TC001 - Validar Checkout de carrinho com dados válidos
 
 ---
