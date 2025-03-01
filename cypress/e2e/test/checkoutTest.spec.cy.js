@@ -1,35 +1,36 @@
 context("CHECKOUT", () => {
-    beforeEach(() => {
-      cy.visit("/");
-      cy.fixture("loginData").then((loginData) => {
-        cy.fillUsername(loginData.validCredentials.username);
-        cy.fillPassword(loginData.validCredentials.password);
+  beforeEach(() => {
+    cy.visit("/");
+    cy.fixture("loginData").then((loginData) => {
+      cy.fillUsername(loginData.validCredentials.username);
+      cy.fillPassword(loginData.validCredentials.password);
 
-        cy.clickLoginBtn();
-      });
-
-      cy.getProductName();
-      cy.addProductToCart();
-
-      cy.navigateToCart();
-      cy.validateProductInCart();
-
+      cy.clickLoginBtn();
     });
 
-    it("TC001 - Validar Checkout de carrinho com dados válidos", () => {
-        cy.fixture("checkoutData").then((checkoutData) => {
-            cy.clickCheckoutBtn();
+    cy.getProductName();
+    cy.addProductToCart();
 
-            cy.fillFirstNameField(checkoutData.firstName);
-            cy.fillLastNameField(checkoutData.lastName);
-            cy.fillPostalCodeField(checkoutData.zipCode);
-            cy.clickContinueBtn();
+    cy.navigateToCart();
+    cy.validateProductInCart();
+  });
 
-            cy.validateTotalPrice("32.39");
-            cy.clickFinishBtn();
+  it("TC001 - Validar Checkout de carrinho com dados válidos", () => {
+    cy.fixture("checkoutData").then((checkoutData) => {
+      cy.clickCheckoutBtn();
 
-            cy.validateSuccessMsg("Thank you for your order!");
-            cy.validateCompleteDescription("Your order has been dispatched, and will arrive just as fast as the pony can get there!");
-        });
+      cy.fillFirstNameField(checkoutData.firstName);
+      cy.fillLastNameField(checkoutData.lastName);
+      cy.fillPostalCodeField(checkoutData.zipCode);
+      cy.clickContinueBtn();
+
+      cy.validateTotalPrice("32.39");
+      cy.clickFinishBtn();
+
+      cy.validateSuccessMsg("Thank you for your order!");
+      cy.validateCompleteDescription(
+        "Your order has been dispatched, and will arrive just as fast as the pony can get there!"
+      );
     });
+  });
 });
