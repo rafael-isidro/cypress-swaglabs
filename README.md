@@ -81,7 +81,7 @@ npx cypress run
 ```sh
 npx cypress run --reporter cypress-mochawesome-reporter
 ```
-
+O relatório dos testes será gerado em ```cypress/reports/html```
 
 ## 📌 Casos de Teste Implementados
 ### Login:
