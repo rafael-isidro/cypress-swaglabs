@@ -48,6 +48,7 @@ git clone https://github.com/rafael-isidro/cypress-swaglabs.git
     }
 }
 ```
+#### checkoutData.json
 
 ```sh
 {
