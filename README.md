@@ -7,6 +7,7 @@ Este projeto contém testes automatizados para o site [Swag Labs](https://www.sa
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) - Linguagem de programação
 - [Node.js](https://nodejs.org/) - Ambiente de execução para JavaScript no servidor
 - [Cypress](https://www.cypress.io/) - Framework de testes automatizados
+- [Mochawesome Reporter](https://www.npmjs.com/package/cypress-mochawesome-reporter) - Gerador de relatórios para Cypress
 
 ## 📂 Estrutura do Projeto
 ```
@@ -69,10 +70,18 @@ npm install
 ```sh
 npx cypress open
 ```
+
 #### Modo headless (linha de comando):
 ```sh
 npx cypress run
 ```
+
+### 5. Gerar Relatório de Testes
+#### Para gerar relatórios usando o cypress-mochawesome-reporter, execute o seguinte comando:
+```sh
+npx cypress run --reporter cypress-mochawesome-reporter
+```
+
 
 ## 📌 Casos de Teste Implementados
 ### Login:
@@ -88,7 +97,7 @@ npx cypress run
 - ✅ TC002 - Validar remoção de produto do carrinho
 
 ### Carrinho de Compras:
-- ✅ TC001 - Validar Checkout com dados válidos
+- ✅ TC001 - Validar Checkout de carrinho com dados válidos
 
 ---
 ## Autor

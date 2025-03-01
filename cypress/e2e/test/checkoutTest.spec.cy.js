@@ -16,7 +16,7 @@ context("CHECKOUT", () => {
 
     });
 
-    it("TC001 - Validar Checkout com dados válidos", () => {
+    it("TC001 - Validar Checkout de carrinho com dados válidos", () => {
         cy.fixture("checkoutData").then((checkoutData) => {
             cy.clickCheckoutBtn();
 
