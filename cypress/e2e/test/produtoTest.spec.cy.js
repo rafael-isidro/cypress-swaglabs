@@ -8,11 +8,19 @@ context("CARRINHO", () => {
     });
   });
 
-  it("TC001 - Adicionar produto ao carrinho", () => {
+  it("TC001 - Validar adição de produto ao carrinho", () => {
     cy.getProductName();
     cy.addProductToCart();
     cy.navigateToCart();
     cy.validateProductInCart();
   });
 
+  it("TC002 - Validar remoção de produto do carrinho", () => {
+    cy.getProductName();
+    cy.addProductToCart();
+    cy.navigateToCart();
+    cy.validateProductInCart();
+    cy.removeProductFromCart();
+    cy.validateElementNotPresent();
+  });
 });

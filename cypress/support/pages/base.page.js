@@ -13,3 +13,8 @@ Cypress.Commands.add("validateText", (element, text) => {
 Cypress.Commands.add("getText", (element) => {
   cy.get(element).invoke("text");
 });
+
+//Validar que não está presente o elemento
+Cypress.Commands.add("validateElementNotPresent", (element) => {
+  cy.get(element).should("not.exist");
+});

@@ -1,4 +1,5 @@
 const addToCartBtn = "[data-test='add-to-cart-sauce-labs-backpack']";
+const removeFromCartBtn = "[data-test='remove-sauce-labs-backpack']";
 const firstProductNameText = "[data-test='inventory-item-name']";
 const cartContainerBtn = "[data-test='shopping-cart-link']";
 const cartLink = ".shopping_cart_link";
@@ -24,4 +25,12 @@ Cypress.Commands.add("validateProductInCart", () => {
 
 Cypress.Commands.add("navigateToCart", () => {
   cy.clickElement(cartContainerBtn);
+});
+
+Cypress.Commands.add("removeProductFromCart", () => {
+  cy.clickElement(removeFromCartBtn);
+});
+
+Cypress.Commands.add("validateProductRemoved", () => {
+  cy.validateElementNotPresent(firstProductNameText);
 });

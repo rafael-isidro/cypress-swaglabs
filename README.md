@@ -65,6 +65,7 @@ npx cypress run
 ```
 
 ## 📌 Casos de Teste Implementados
+### Login:
 - ✅ TC001 - Login com credenciais válidas
 - ✅ TC002 - Tentar realizar Login com username inválido
 - ✅ TC003 - Tentar realizar Login com senha inválida
@@ -72,6 +73,9 @@ npx cypress run
 - ✅ TC005 - Tentar realizar login com senha vazia
 - ✅ TC006 - Tentar realizar login com conta bloqueada
 
+### Produto:
+- ✅ TC001 - Validar adição de produto ao carrinho
+- ✅ TC002 - Validar remoção de produto do carrinho
 ---
 ## Autor
 
