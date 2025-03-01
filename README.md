@@ -30,7 +30,7 @@ Este projeto contém testes automatizados para o site [Swag Labs](https://www.sa
 ```sh
 git clone https://github.com/rafael-isidro/cypress-swaglabs.git
 ```
-### 2. Adicionar arquivo loginData.json como no modelo abaixo em cypress/fixtures, substituindo username e password pelos dados utilizados para teste:
+### 2. Adicionar arquivo loginData.json e checkoutData.json como no modelo abaixo em cypress/fixtures, substituindo pelos dados utilizados para teste:
 #### loginData.json:
 ```sh
 {
@@ -48,6 +48,15 @@ git clone https://github.com/rafael-isidro/cypress-swaglabs.git
     }
 }
 ```
+
+```sh
+{
+    "firstName": "NOME_VALIDO",
+    "lastName": "SOBRENOME_VALIDO",
+    "zipCode": "00000-000"
+}
+```
+
 ### 3. Instalar dependências
 ```sh
 cd swaglabs-cypress
@@ -76,6 +85,10 @@ npx cypress run
 ### Produto:
 - ✅ TC001 - Validar adição de produto ao carrinho
 - ✅ TC002 - Validar remoção de produto do carrinho
+
+### Carrinho de Compras:
+- ✅ TC001 - Validar Checkout com dados válidos
+
 ---
 ## Autor
 
