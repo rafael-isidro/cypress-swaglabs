@@ -1,8 +1,8 @@
 const addToCartBtn = "[data-test='add-to-cart-sauce-labs-backpack']";
 const removeFromCartBtn = "[data-test='remove-sauce-labs-backpack']";
-const firstProductNameText = "[data-test='inventory-item-name']";
 const cartContainerBtn = "[data-test='shopping-cart-link']";
-const cartLink = ".shopping_cart_link";
+
+const firstProductNameText = "[data-test='inventory-item-name']";
 
 let firstProductName;
 
